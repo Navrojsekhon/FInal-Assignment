@@ -22,7 +22,7 @@
 | Version | Date | Author | Changes |
 |---------|--------|----------|----------------|
 | 1.0 | 2025-11-22 | Navroj Sekhon | Initial SOP created |
-| 1.1 | 2025-11-23 | Simranjit Kur | Improved structure and steps |
+| 1.1 | 2025-11-23 | Simranjit Kaur | Improved structure and steps |
 | 1.2 | 2025-11-24 | Anshveer Singh | Added visuals section |
 | 1.3 | 2025-11-24 | Temilade | Gave a final touch |
 
@@ -106,7 +106,8 @@ It covers:
 
 <img width="464" height="500" alt="3" src="https://github.com/user-attachments/assets/e887a1e2-3420-466f-a470-f5fc9ae0fbed" />
 
-![4](https://github.com/user-attachments/assets/996c49f7-e648-4aed-acd8-ef1710cf60d0)
+![12](https://github.com/user-attachments/assets/a6d34122-1d19-4357-9787-19eef8ec6d18)
+
 
 
 **Purpose:** Accessing the admin interface allows configuration of Wi-Fi and security settings.
@@ -151,7 +152,8 @@ It covers:
 1. Click **Save/Apply**.  
 2. Restart the router.
 
-<img width="1500" height="1000" alt="8" src="https://github.com/user-attachments/assets/1e4d73db-b74a-4493-9de3-21c4e7fa4d05" />
+![15](https://github.com/user-attachments/assets/c4e24f05-301c-404e-8664-8e8e31bd7d24)
+
 
 
 **Purpose:** This ensures new settings take effect.
