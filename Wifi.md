@@ -11,9 +11,10 @@
 ## **2. Approval Table**
 | Role | Name |  Date |
 |------|------|-------|
-| Document Author | Navroj Sekhon | YYYY-MM-DD |
-| Reviewer | Simranjit Kaur | YYYY-MM-DD |
-| Approver | Anshveer Singh | YYYY-MM-DD |
+| Document Author | Navroj Sekhon | 2025-11-24 |
+| Reviewer | Simranjit Kaur | 2025-11-24 |
+| Second Reviewer | Temilade | 2025-11-24 |
+| Approver | Anshveer Singh | 2025-11-24 |
 
 ---
 
@@ -23,6 +24,7 @@
 | 1.0 | 2025-11-22 | Navroj Sekhon | Initial SOP created |
 | 1.1 | 2025-11-23 | Simranjit Kur | Improved structure and steps |
 | 1.2 | 2025-11-24 | Anshveer Singh | Added visuals section |
+| 1.3 | 2025-11-24 | Temilade | Gave a final touch |
 
 ---
 
@@ -53,7 +55,6 @@ It covers:
 | Install router & connect modem | Simranjit Kaur|
 | Configure Wi-Fi & security | Anshveer Singh |
 | Verification of setup | Temilade |
-| SOP approval | Temilade |
 
 ---
 
@@ -62,7 +63,7 @@ It covers:
 - Modem (Provided by ISP)  
 - Ethernet Cable  
 - Power Adapter  
-- Laptop or Smartphone  
+- Laptop  
 
 ---
 
@@ -72,27 +73,30 @@ It covers:
 
 ## **Step 1: Unbox the Router**
 1. Remove the router, power adapter, Ethernet cable, and instruction manual.
-2. Verify that all components are included.
+2. Verify that all components are included in the box.
 
-**Purpose:** Ensures all required hardware is available before configuration.
+**Purpose:** It Ensures that all required hardware for setting up the network is available before configuration.
 
 ---
 
 ## **Step 2: Connect Router to Modem**
 1. Turn off the modem.  
-2. Connect the modem’s Ethernet port to the router’s **WAN/Internet** port using the Ethernet cable.  
+2. Connect the modem’s Ethernet port to the router’s **Internet** port using the Ethernet cable.  
 3. Turn the modem back on.  
 4. Plug in and power on the router.
 
-**Purpose:** Delivers the internet signal from the modem to the router so it can broadcast Wi-Fi.
+**Purpose:** It Delivers the internet signal from the modem to the router so it can broadcast Wi-Fi.
 
 ---
 
 ## **Step 3: Access Router Settings**
-1. Connect your laptop/phone to the router via Wi-Fi or Ethernet.  
-2. Open a web browser.  
-3. Enter the router IP (usually `192.168.0.1` or `192.168.1.1`).  
-4. Log in using the default credentials (printed on router label).
+1. Connect your laptop to the router via Ethernet.
+2. Open cmd.
+3. Type command **ipconfig**
+4. Then, note the default gateway address.
+5. Open a web browser.  
+6. Enter the router IP(Default Gateway). Usually it is `192.168.0.1` or `192.168.1.1`).  
+7. Log in using the default credentials (printed on router label).
 
 **Purpose:** Accessing the admin interface allows configuration of Wi-Fi and security settings.
 
@@ -102,24 +106,21 @@ It covers:
 1. Go to **Wireless Settings**.  
 2. Change the SSID to a recognizable name (Example: *DRDANGER*).
 
-**Purpose:** Helps identify your network among neighboring Wi-Fi networks.
+**Purpose:** It Helps to identify your network among neighboring Wi-Fi networks.
 
 ---
 
 ## **Step 5: Set a Strong Password**
-1. Select **WPA2** or **WPA3** security mode.  
+1. Select **WPA2** security mode.  
 2. Create a password of at least 12 characters (letters, numbers, symbols).
 
-**Purpose:** Protects the network from unauthorized access.
+**Purpose:** This will protect the network from unauthorized access.
 
 ---
 
 ## **Step 6: Optional Advanced Settings**
 - Guest Network  
 - Firewall  
-- Parental Controls  
-- Disable WPS  
-- Change Wi-Fi Channel  
 
 **Purpose:** Improves security and stability based on user needs.
 
@@ -127,18 +128,18 @@ It covers:
 
 ## **Step 7: Save Settings & Restart Router**
 1. Click **Save/Apply**.  
-2. Restart the router if required.
+2. Restart the router.
 
-**Purpose:** Ensures new settings take effect.
+**Purpose:** This ensures new settings take effect.
 
 ---
 
 ## **Step 8: Connect Devices**
-1. Open Wi-Fi settings on each device.  
-2. Select your new SSID.  
-3. Enter your password.
+1. Open Wi-Fi settings on laptop.  
+2. Select DRDANGER from the list.  
+3. Enter password.
 
-**Purpose:** Confirms the Wi-Fi network is working correctly.
+**Purpose:** It confirms that Wi-Fi network is working correctly.
 
 ---
 
@@ -147,7 +148,7 @@ It covers:
 - Run an internet speed test  
 - Check Wi-Fi stability around the home  
 
-**Purpose:** Verifies speed, coverage, and performance of the new Wi-Fi network.
+**Purpose:** This Verifies speed, coverage, and performance of the our network.
 
 ---
 
