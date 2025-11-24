@@ -193,7 +193,7 @@ This image shows a simple home Wi-Fi network layout:
 - It first connects to a Modem, which converts the incoming signal.
 - The modem connects to a Router.
 - The Router creates the Wi-Fi network.
-- Multiple devices like computers and phones connect wirelessly to the router to access the internet.
+- Multiple devices like computers and phones connect wirelessly to the router to access the internet.\
 **In short: Internet → Modem → Router → Devices.**
 
 # **10. Conclusion**
