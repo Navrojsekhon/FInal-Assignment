@@ -24,12 +24,13 @@
 | 1.0 | 2025-11-22 | Navroj Sekhon | Initial SOP created |
 | 1.1 | 2025-11-23 | Simranjit Kaur | Improved structure and steps |
 | 1.2 | 2025-11-24 | Anshveer Singh | Added visuals section |
-| 1.3 | 2025-11-24 | Temilade | Gave a final touch |
+| 1.3 | 2025-11-24 | Temilade | Final touch |
 
 ---
 
 ## **4. Purpose**
-The purpose of this SOP is to provide clear, step-by-step instructions for setting up a secure and reliable Wi-Fi network at home.  
+This SOP gives step-by-step instructions and rationale for installing, configuring, securing, and verifying a home Wi-Fi network. 
+Use it when installing a new router, replacing an existing device, or onboarding someone who will maintain the network.
 This ensures consistent installation, proper configuration, and secure wireless access for all home devices.
 
 ---
@@ -37,14 +38,14 @@ This ensures consistent installation, proper configuration, and secure wireless 
 ## **5. Scope**
 This SOP applies to:
 - Home users installing Wi-Fi for the first time  
-- Users setting up a new router  
+- Users setting up a new router or upgrading equipment
 - Users replacing or upgrading existing home Wi-Fi equipment  
 
 It covers:
-- Physical setup  
-- Router configuration  
-- Security settings  
-- Connectivity testing  
+- Unboxing and physical connections.
+- Router admin access and configuration.
+- Security hardening (passwords, encryption, guest network).
+- Basic performance and coverage checks.
 
 ---
 
@@ -59,11 +60,11 @@ It covers:
 ---
 
 ## **7. Required Equipment**
-- Wireless Router  
-- Modem (Provided by ISP)  
-- Ethernet Cable  
-- Power Adapter  
-- Laptop  
+- Wireless Router - ensure it supports current Wi-Fi standards (at least Wi-Fi 5; Wi-Fi 6 preferred)
+- Modem (Provided by ISP) - provided by ISP or a compatible third-party modem. 
+- Ethernet Cable - Cat5e or Cat6 recommended
+- Power Adapter - for router and modem 
+- Laptop -  to access router settings and perform tests 
 
 ---
 
@@ -72,8 +73,9 @@ It covers:
 ---
 
 ## **Step 1: Unbox the Router**
-1. Remove the router, power adapter, Ethernet cable, and instruction manual.
-2. Verify that all components are included in the box.
+1. Open the package and remove: router, power adapter, Ethernet cable(s), quick start guide.
+2. Inspect for damage and confirm included items match the packing list.
+3. Note the router’s model, default SSID, default admin username, and default password printed on the label or quick guide.
 
   ![1](https://github.com/user-attachments/assets/96a92428-4a63-4945-8092-362d1f71df64)
 
@@ -83,10 +85,10 @@ It covers:
 ---
 
 ## **Step 2: Connect Router to Modem**
-1. Turn off the modem.  
-2. Connect the modem’s Ethernet port to the router’s **Internet** port using the Ethernet cable.  
-3. Turn the modem back on.  
-4. Plug in and power on the router.
+1. Power off the modem (if present).
+2. Connect one end of the Ethernet cable to the modem’s LAN (or the ISP port) and the other end to the router’s WAN/Internet port.
+3. Power on the modem, wait until it finishes initializing (LEDs stable).
+4. Plug in and power on the router; wait for it to boot (status LED indicates ready).
 
 <img width="721" height="306" alt="2" src="https://github.com/user-attachments/assets/9dffd539-a42c-45d2-af45-b52dcac1af37" />
 
@@ -96,13 +98,10 @@ It covers:
 ---
 
 ## **Step 3: Access Router Settings**
-1. Connect your laptop to the router via Ethernet.
-2. Open cmd.
-3. Type command **ipconfig**
-4. Then, note the default gateway address.
-5. Open a web browser.  
-6. Enter the router IP(Default Gateway). Usually it is `192.168.0.1` or `192.168.1.1`).  
-7. Log in using the default credentials (printed on router label).
+1. Connect a laptop to the router using Ethernet (recommended for initial config).
+2. On Windows: Open Command Prompt and run `ipconfig` to find the **Default Gateway** address (the router IP).
+3. Open a browser and enter the Default Gateway (commonly `192.168.0.1`, `192.168.1.1`, or `192.168.1.254`).
+4. Log in using the default admin credentials printed on the device label.
 
 <img width="464" height="500" alt="3" src="https://github.com/user-attachments/assets/e887a1e2-3420-466f-a470-f5fc9ae0fbed" />
 
@@ -116,54 +115,59 @@ It covers:
 
 ## **Step 4: Set Wi-Fi Network Name (SSID)**
 1. Go to **Wireless Settings**.  
-2. Change the SSID to a recognizable name (Example: *DRDANGER*).
+2. Change the SSID to a recognizable name but not personally identifying(Example: *DRDANGER*).
+3. If router supports dual/tri-band, create separate SSIDs for each band if desired (e.g., `DRDANGER-2G` and `DRDANGER-5G`)
 
 ![9](https://github.com/user-attachments/assets/53cca0bf-0661-4b71-b742-2c65b600b13e)
 
 
-**Purpose:** It Helps to identify your network among neighboring Wi-Fi networks.
+**Purpose:** Clear SSIDs help family members identify networks; separating bands helps devices choose between range (2.4 GHz) and speed (5 GHz).
 
 ---
 
 ## **Step 5: Set a Strong Password**
-1. Select **WPA2** security mode.  
-2. Create a password of at least 12 characters (letters, numbers, symbols).
+1. Under wireless security, select **WPA2-Personal** or **WPA3-Personal** if supported. **Avoid WEP and WPA (TKIP) — they are insecure.**
+2. Create a **Wi-Fi passphrase** that is more secure(12+ characters, mixture of upper/lowercase, numbers, symbols).
 
 ![6](https://github.com/user-attachments/assets/d9d77d70-5fc8-48d3-b3ea-dd8743c65414)
 
 
-**Purpose:** This will protect the network from unauthorized access.
+**Purpose:** This will protect the network from unauthorized access. Default admin credentials are widely known and present a major security risk.
 
 ---
 
 ## **Step 6: Optional Advanced Settings**
-- Guest Network  
-- Firewall
-- MAC address filtering
+- **Guest Network:** Create an isolated SSID for visitors that restricts access to your internal LAN devices (printers, NAS). Use WPA2/WPA3 and set an expiration or password you can change easily.
+- **MAC Address Filtering:** Adds administrative control but is not an effective security measure by itself (MACs can be spoofed). Use only as an additional control.
+- **QoS (Quality of Service):** Prioritize traffic for devices or applications (e.g., VoIP, gaming, video conferencing).
+- **Parental Controls:** Schedule or block specific websites/services per device.
+- **VLANs:** Segment devices (e.g., IoT devices on a separate VLAN) if router supports it.
+- **Remote Management:** Disable WAN-side remote admin unless necessary. If needed, restrict by IP and enable strong authentication.
 
 <img width="889" height="529" alt="7" src="https://github.com/user-attachments/assets/3bcaf5e0-4931-481f-b077-57334bb7eaf2" />
 
 
-**Purpose:** Improves security and stability based on user needs.
+**Purpose:** Improves security and stability based on user needs. Advanced controls also improve performance and management when used properly.
 
 ---
 
 ## **Step 7: Save Settings & Restart Router**
-1. Click **Save/Apply**.  
-2. Restart the router.
+1. Click **Save/Apply** after changes.
+2. Perform a controlled restart from the admin interface (or power cycle).
+3. Confirm settings persist after reboot.
 
 ![15](https://github.com/user-attachments/assets/c4e24f05-301c-404e-8664-8e8e31bd7d24)
 
 
 
-**Purpose:** This ensures new settings take effect.
+**Purpose:** A restart ensures all services reload with new settings. Confirming persistence prevents surprises later.
 
 ---
 
 ## **Step 8: Connect Devices**
-1. Open Wi-Fi settings on laptop.  
-2. Select DRDANGER from the list.  
-3. Enter password.
+1. On each device (laptop, phone, smart TV), open Wi-Fi settings and select your SSID.
+2. Enter the Wi-Fi passphrase you configured.
+3. Optionally, configure static IPs for devices that need persistent addresses (e.g., printers, NAS) using DHCP reservation where possible.
 
 <img width="732" height="460" alt="5" src="https://github.com/user-attachments/assets/f8edd9e9-d9c9-45a2-abf3-4e5c0ed00df3" />
 
@@ -173,14 +177,14 @@ It covers:
 ---
 
 ## **Step 9: Test Connectivity**
-- Load a webpage  
-- Run an internet speed test  
-- Check Wi-Fi stability around the home.
+1. Open a browser and load several websites to verify internet access.
+2. Run an internet speed test (e.g., speedtest.net) from a few locations in the house to check throughput.
+3. Walk test Wi-Fi coverage: check signal and performance in rooms where devices will be used.
 
   <img width="705" height="463" alt="10" src="https://github.com/user-attachments/assets/9fff19db-4d2d-406a-a1f0-45dd8bbe03d1" />
 
 
-**Purpose:** This Verifies speed, coverage, and performance of the our network.
+**Purpose:** Verifies service quality and coverage; identifies weak spots where an extender or repositioning is needed.
 
 ---
 
@@ -196,5 +200,22 @@ This image shows a simple home Wi-Fi network layout:
 - Multiple devices like computers and phones connect wirelessly to the router to access the internet.\
 **In short: Internet → Modem → Router → Devices.**
 
-# **10. Conclusion**
+# **10. Security & Maintenance Checklist**
+- Change admin password from defaults.
+- Use WPA2/WPA3 with a strong Wi-Fi passphrase.
+- Disable WPS and remote admin on WAN.
+- Enable automatic firmware updates or check monthly for firmware releases.
+- Regularly update device credentials (guest network password, admin password).
+- Document network configuration and store in a safe place (model, firmware version, SSIDs used, static IPs, DHCP reservations).
+- Backup router configuration (if supported) before major changes.
+- Revoke or rotate guest credentials periodically.
+
+# **11. Troubleshooting — Common Issues & Fixes**
+- **No Internet after setup:** Verify modem is online (ISP light), check WAN IP on router; restart modem then router.
+- **Cannot access router admin page:** Confirm Ethernet connection, verify gateway IP (`ipconfig` / `ip route`), clear browser cache or use a different browser/device.
+- **Weak Wi-Fi signal:** Move router to central/high location, reduce obstacles, change channel, or add mesh/extender.
+- **Devices won’t connect:** Reboot device, forget network and reconnect, check MAC filtering, confirm password correctness.
+- **Intermittent drops:** Check for firmware update, reduce interference (microwave, cordless phones), test with different band.
+
+# **12. Conclusion**
 This SOP provides a complete, standardized procedure for setting up a secure home Wi-Fi network. Following these steps ensures proper installation, protection, and reliable connectivity for all devices in the household.
