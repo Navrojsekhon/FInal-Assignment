@@ -227,5 +227,6 @@ This image shows a simple home Wi-Fi network layout:
 This SOP gives you a full, step-by-step guide on how to set up a safe and properly working Wi-Fi network at home. By following all the steps in the document, you can make sure that:
 - Your Wi-Fi is installed correctly
 - Your network is secure from unauthorized access
-- All your home devices can connect smoothly and reliably
+- All your home devices can connect smoothly and reliably\
+
 In simple words, it ensures your home Wi-Fi is set up the right way, protected, and runs without problems.
