@@ -105,7 +105,8 @@ It covers:
 
 <img width="464" height="500" alt="3" src="https://github.com/user-attachments/assets/e887a1e2-3420-466f-a470-f5fc9ae0fbed" />
 
-![12](https://github.com/user-attachments/assets/a6d34122-1d19-4357-9787-19eef8ec6d18)
+<img width="959" height="473" alt="51" src="https://github.com/user-attachments/assets/be845eec-10ee-469b-863f-942044eb5284" />
+
 
 
 
@@ -118,7 +119,9 @@ It covers:
 2. Change the SSID to a recognizable name but not personally identifying(Example: *DRDANGER*).
 3. If router supports dual/tri-band, create separate SSIDs for each band if desired (e.g., `DRDANGER-2G` and `DRDANGER-5G`)
 
-![9](https://github.com/user-attachments/assets/53cca0bf-0661-4b71-b742-2c65b600b13e)
+<img width="959" height="470" alt="53" src="https://github.com/user-attachments/assets/f2ce71a4-1cd9-4537-8ad6-bcd044100e54" />
+
+
 
 
 **Purpose:** Clear SSIDs help family members identify networks; separating bands helps devices choose between range (2.4 GHz) and speed (5 GHz).
@@ -130,6 +133,7 @@ It covers:
 2. Create a **Wi-Fi passphrase** that is more secure(12+ characters, mixture of upper/lowercase, numbers, symbols).
 
 ![6](https://github.com/user-attachments/assets/d9d77d70-5fc8-48d3-b3ea-dd8743c65414)
+
 
 
 **Purpose:** This will protect the network from unauthorized access. Default admin credentials are widely known and present a major security risk.
@@ -144,7 +148,9 @@ It covers:
 - **VLANs:** Segment devices (e.g., IoT devices on a separate VLAN) if router supports it.
 - **Remote Management:** Disable WAN-side remote admin unless necessary. If needed, restrict by IP and enable strong authentication.
 
-<img width="889" height="529" alt="7" src="https://github.com/user-attachments/assets/3bcaf5e0-4931-481f-b077-57334bb7eaf2" />
+<img width="959" height="472" alt="54" src="https://github.com/user-attachments/assets/ee5b880c-dd0d-4906-871e-4ccb05344e2b" />
+<img width="959" height="467" alt="55" src="https://github.com/user-attachments/assets/05c20b9f-7786-4c49-bb26-9706ceed58cb" />
+<img width="959" height="469" alt="56" src="https://github.com/user-attachments/assets/607ab9c6-ab8a-4b5b-996e-ee913cffe5b0" />
 
 
 **Purpose:** Improves security and stability based on user needs. Advanced controls also improve performance and management when used properly.
@@ -218,4 +224,8 @@ This image shows a simple home Wi-Fi network layout:
 - **Intermittent drops:** Check for firmware update, reduce interference (microwave, cordless phones), test with different band.
 
 # **12. Conclusion**
-This SOP provides a complete, standardized procedure for setting up a secure home Wi-Fi network. Following these steps ensures proper installation, protection, and reliable connectivity for all devices in the household.
+This SOP gives you a full, step-by-step guide on how to set up a safe and properly working Wi-Fi network at home. By following all the steps in the document, you can make sure that:
+- Your Wi-Fi is installed correctly
+- Your network is secure from unauthorized access
+- All your home devices can connect smoothly and reliably
+In simple words, it ensures your home Wi-Fi is set up the right way, protected, and runs without problems.
